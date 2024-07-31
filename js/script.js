@@ -58,3 +58,19 @@ window.onscroll = () => {
         backDelay: 1000,
         loop: true
     });
+
+
+    // ..................Contact form integration with gmail...................
+    
+
+    function sendEmail(){
+        var params = {
+            from_name : document.getElementById("fullName").value,
+            email_id : document.getElementById("email_id").value,
+            message : document.getElementById("body").value
+
+        }
+        emailjs.send("service_3njkp47","template_c473rlf", params).then(function(){
+            alert("Email Send Successfully!" );
+        });
+    }

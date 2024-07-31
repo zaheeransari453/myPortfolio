@@ -559,11 +559,11 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
+    width: 60%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 85%;
+    width: 75%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
@@ -573,17 +573,22 @@ span {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
     width: 40%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 70%;
+}
 
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
+    width: 80%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
     width: 60%;
 }
-
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+    width: 90%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 40%;
 }
 
@@ -604,6 +609,7 @@ span {
 
 .services-container .service-box {
     flex: 1 1 30rem;
+    justify-content: space-between;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -690,7 +696,10 @@ span {
     margin: .3rem 0 1rem;
 
 }
-
+.demo{
+    display: flex;
+    gap: 1rem;
+}
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -708,6 +717,7 @@ span {
 
 .portfolio-box:hover img {
     transform: scale(1.1);
+    opacity: 0.3;
 
 }
 
