@@ -42,6 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  box-shadow: 0 0.8rem 1.2rem var(--main-color);
 }
 
 .header.sticky {
@@ -53,6 +54,7 @@ body {
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
+  text-shadow: 0 0 0.8rem rgba(100, 254, 218, 0.6);
 }
 
 #menu-icon {
@@ -69,7 +71,7 @@ body {
 }
 
 .navbar a:hover,
-.navbar a:active {
+.navbar a.active {
   color: var(--main-color);
 }
 
