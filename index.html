@@ -4,538 +4,700 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
 
-  <link rel="stylesheet" href="src/style.css" />
+  <title>Zaheer Ansari — AI Native Full Stack Developer</title>
+  <meta name="description"
+    content="Zaheer Ansari is an AI Native Full Stack Developer in Lahore building production web and desktop apps with React, Next.js, TypeScript and Electron — including RAG systems, LLM apps and voice AI agents." />
+  <meta name="author" content="Zaheer Ansari" />
+  <link rel="canonical" href="https://zaheeransari453.github.io/myPortfolio/" />
+  <meta name="theme-color" content="#1f242d" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zaheeransari453.github.io/myPortfolio/" />
+  <meta property="og:title" content="Zaheer Ansari — AI Native Full Stack Developer" />
+  <meta property="og:description"
+    content="Production web and desktop apps with React, Next.js, TypeScript and Electron — including RAG systems, LLM apps and voice AI agents." />
+  <meta property="og:image" content="https://zaheeransari453.github.io/myPortfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Zaheer Ansari, AI Native Full Stack Developer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zaheer Ansari — AI Native Full Stack Developer" />
+  <meta name="twitter:description"
+    content="Production web and desktop apps with React, Next.js, TypeScript and Electron — including RAG systems, LLM apps and voice AI agents." />
+  <meta name="twitter:image" content="https://zaheeransari453.github.io/myPortfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="public/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zaheer Ansari",
+      "jobTitle": "AI Native Full Stack Developer",
+      "url": "https://zaheeransari453.github.io/myPortfolio/",
+      "email": "zaheerulhassan453@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+      "alumniOf": "University of Management and Technology, Lahore",
+      "sameAs": [
+        "https://github.com/zaheeransari453",
+        "https://www.linkedin.com/in/zaheeransari453"
+      ],
+      "knowsAbout": ["React", "Next.js", "TypeScript", "Electron", "RAG systems", "LLM applications"]
+    }
   </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("gmF26SU56zk2D3ZCJ");
-    })();
-  </script>
-
 </head>
 
 <body>
+  <a href="#home" class="skip-link">Skip to main content</a>
+
   <!-- ...............HEADER DESIGN............. -->
 
   <header class="header">
-    <a href="#" class="logo">Zaheer Portfolio.</a>
+    <a href="#home" class="logo">Zaheer Ansari<span class="logo-code" aria-hidden="true">&lt;/&gt;</span></a>
 
-    <i class="bx bx-menu" id="menu-icon"></i>
+    <button type="button" class="menu-toggle" id="menu-icon" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="primary-nav">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
+    <nav class="navbar" id="primary-nav" aria-label="Primary">
+      <a href="#home" class="active" aria-current="page">Home</a>
       <a href="#about">About</a>
-      <a href="#education">Education</a>
+      <a href="#education">Journey</a>
       <a href="#skills">Skills</a>
       <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio">Work</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- ................HOME SECTION.............. -->
+  <main>
+    <!-- ................HOME SECTION.............. -->
 
-  <section id="home" class="home">
-    <div class="home-content">
-      <h3>Hello, it's Me</h3>
-      <h1>Zaheer Ansari</h1>
-      <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>
-        Welcome to my portfolio! I'm a passionate front-end developer
-        with a knack for creating dynamic and responsive websites. With a keen
-        eye for detail and a love for innovative design, I specialize in
-        transforming complex ideas into seamless digital experiences with a
-        strong foundation in MUI, Bootstrap5, JavaScript, ReactJS and various modern
-        frameworks.
+    <section id="home" class="home">
+      <div class="home-content">
+        <p class="eyebrow">Hello, it's me</p>
+        <h1>Zaheer Ansari</h1>
+        <p class="tagline">And I'm a <span class="multiple-text">AI Native Full Stack Developer</span></p>
+        <p>
+          I'm a Full-Stack Developer specializing in AI-native applications,
+          modern web development, and intelligent user experiences. I build
+          scalable products with React, Next.js, Node.js, and modern databases,
+          while integrating LLMs, RAG pipelines, AI agents, and real-time voice
+          AI. I also leverage AI-assisted development and MCP-based workflows to
+          automate development and turn ideas into production-ready products
+          faster.
+        </p>
+
+        <ul class="social-media">
+          <li>
+            <a href="https://github.com/zaheeransari453" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/zaheeransari453" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on LinkedIn"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/zaheeer_ansari" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on X"><i class="bx bxl-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/just.x.zaheer" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on Instagram"><i class="bx bxl-instagram-alt" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+
+        <div class="home-actions">
+          <a href="assets/Zaheer_AI_Native_Resume.pdf" class="btn" download>Download CV</a>
+          <a href="#portfolio" class="btn btn-ghost">View my work</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="images/profile-home.webp" width="900" height="820" fetchpriority="high"
+          alt="Portrait of Zaheer Ansari" />
+      </div>
+    </section>
+
+    <!-- ................ABOUT SECTION.............. -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/profile-about.webp" width="900" height="777" loading="lazy"
+          alt="Zaheer Ansari, AI Native Full Stack Developer" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>AI-Native Full-Stack Developer</h3>
+        <p>
+          I'm Zaheer, based in Lahore with a BS in Software Engineering from
+          UMT. My core expertise is frontend and full-stack development with
+          React, Next.js, TypeScript, Node.js and modern databases, building
+          applications that are responsive, scalable and genuinely
+          user-friendly.
+        </p>
+        <p>
+          I work across the entire development lifecycle — translating Figma
+          designs into polished interfaces and reusable components, then
+          connecting them to REST APIs, databases, LLMs and real-time services.
+          That's meant shipping Aurie AI, a wellness app running on both
+          Electron and Next.js, and RozeeGPT, an AI career assistant built with
+          React and Material UI.
+        </p>
+        <p>
+          Alongside that I follow an AI-native development approach — using
+          Claude Code, Cursor and LLMs to accelerate coding, debugging and UI
+          implementation, and wiring MCP servers into Figma, Slack, Linear and
+          databases to automate the path from design to implementation.
+        </p>
+        <a href="src/aboutme.html" class="btn">Read more</a>
+      </div>
+    </section>
+
+    <!-- ................EDUCATION SECTION..........-->
+
+    <section id="education" class="education">
+      <h2 class="heading"><span>My</span> Journey</h2>
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Experience</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> Jan 2026 - Aug 2026
+                </p>
+                <h4>Associate Software Engineer — StrategistHub</h4>
+                <p>
+                  Built Aurie AI across desktop (Electron macOS app) and web
+                  (Next.js + Tailwind CSS). Shipped new features, implemented UI
+                  from Figma, integrated REST APIs and improved performance,
+                  working with cross-functional teams on testing and debugging.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> Nov 2024 - Jun 2025
+                </p>
+                <h4>Frontend Developer (Junior/Associate) — Rozee.pk</h4>
+                <p>
+                  Contributed to RozeeGPT, an AI-powered career assistant. Built
+                  reusable, responsive UI components with React.js and Material
+                  UI, improved performance and UX consistency, and ensured
+                  cross-browser compatibility using Git/GitLab.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> Nov 2022 - Jul 2023
+                </p>
+                <h4>Teaching Assistant — University of Management and Technology</h4>
+                <p>
+                  Supported Software Engineering courses at UMT: led discussion
+                  sessions, gave one-on-one help, graded assignments and helped
+                  professors develop instructional material.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> 2019 - 2023
+                </p>
+                <h4>BS Software Engineering — University of Management and Technology, Lahore</h4>
+                <p>Graduated with a CGPA of 3.38.</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> 2017 - 2019
+                </p>
+                <h4>Intermediate in Computer Science — Stars Group of Colleges, Lahore</h4>
+                <p>Completed ICS with 80% marks.</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <p class="year">
+                  <i class="bx bxs-calendar" aria-hidden="true"></i> 2014 - 2016
+                </p>
+                <h4>Matriculation (Science) — The Learners Grammar School, Lahore</h4>
+                <p>Completed Matriculation with 77% marks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ................SKILLS SECTION..............-->
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3 class="title">Languages</h3>
+          <ul class="chips">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="title">Frameworks &amp; Libraries</h3>
+          <ul class="chips">
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>Electron</li>
+            <li>Redux</li>
+            <li>React Router</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="title">Styling &amp; UI</h3>
+          <ul class="chips">
+            <li>Tailwind CSS</li>
+            <li>Material UI</li>
+            <li>Bootstrap 5</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="title">AI Engineering</h3>
+          <ul class="chips">
+            <li>Vercel AI SDK</li>
+            <li>RAG pipelines</li>
+            <li>Google Gemini</li>
+            <li>Groq</li>
+            <li>Transformers.js</li>
+            <li>LiveKit voice agents</li>
+            <li>MCP servers</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="title">Data &amp; Backend</h3>
+          <ul class="chips">
+            <li>REST APIs</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Supabase</li>
+            <li>Firebase</li>
+            <li>Socket.IO</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="title">Tooling</h3>
+          <ul class="chips">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+            <li>Vite</li>
+            <li>Figma</li>
+            <li>VS Code</li>
+            <li>Cursor</li>
+            <li>Claude Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ................SERVICES SECTION............ -->
+
+    <section class="services" id="services">
+      <h2 class="heading">What I <span>Do</span></h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <i class="bx bx-code-alt" aria-hidden="true"></i>
+          <h3>Full Stack Development</h3>
+          <p>
+            End-to-end features in React and Next.js backed by Node.js and REST
+            APIs — from data model to shipped interface, on web and on desktop
+            with Electron.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-brain" aria-hidden="true"></i>
+          <h3>AI &amp; LLM Integration</h3>
+          <p>
+            Retrieval-augmented generation over your own documents, streaming
+            chat with source attribution, chatbots and real-time voice agents
+            using the Vercel AI SDK, Gemini, Groq and LiveKit.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-devices" aria-hidden="true"></i>
+          <h3>Frontend Engineering</h3>
+          <p>
+            Accessible, responsive interfaces built from Figma designs — reusable
+            component libraries, consistent design systems and measurable
+            performance improvements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ...............PORTFOLIO SECTION............. -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Featured <span>Work</span></h2>
+
+      <div class="work-container">
+        <article class="work-box">
+          <a class="work-media" href="https://www.aurahealth.io/" target="_blank" rel="noopener noreferrer"
+            tabindex="-1" aria-hidden="true">
+            <img src="images/aurahealth.webp" width="800" height="430" loading="lazy"
+              alt="Aura Health landing page: 'Rediscover Your Light — Start Your Healing Journey', a mental wellness and sleep app" />
+          </a>
+          <div class="work-head">
+            <h3>Aurie AI &amp; AuraHealth</h3>
+            <p class="work-meta">StrategistHub · 2026 · Company product</p>
+          </div>
+          <p>
+            A meditation and wellness app that suggests personalised tracks based
+            on the user's mood and feelings. I worked across both platforms — an
+            Electron macOS desktop app and the Next.js web app — on feature
+            development, UI implementation from Figma, debugging and performance
+            optimisation.
+          </p>
+          <ul class="chips chips-sm">
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Electron</li>
+            <li>JavaScript</li>
+            <li>REST APIs</li>
+          </ul>
+          <div class="work-links">
+            <a href="https://www.aurahealth.io/" target="_blank" rel="noopener noreferrer" class="text-link">
+              <i class="bx bx-link-external" aria-hidden="true"></i> Visit site
+            </a>
+          </div>
+        </article>
+
+        <article class="work-box">
+          <a class="work-media" href="https://www.rozeegpt.ai/" target="_blank" rel="noopener noreferrer"
+            tabindex="-1" aria-hidden="true">
+            <img src="images/rozeegpt.webp" width="800" height="431" loading="lazy"
+              alt="rozeegpt.ai landing page with two paths: 'Start your smart job search here' for professionals and 'Who do you want to hire?' for employers" />
+          </a>
+          <div class="work-head">
+            <h3>RozeeGPT — AI Career Assistant</h3>
+            <p class="work-meta">Rozee.pk · Mar - Jun 2025 · Company product</p>
+          </div>
+          <p>
+            An AI career assistant with two sides — job seekers search roles and
+            rewrite their CV conversationally, while employers shortlist
+            candidates instantly. I built reusable, responsive UI components and
+            focused on UI consistency and performance across the product.
+          </p>
+          <ul class="chips chips-sm">
+            <li>React.js</li>
+            <li>Material UI</li>
+            <li>React Router</li>
+            <li>JavaScript</li>
+            <li>REST APIs</li>
+          </ul>
+          <div class="work-links">
+            <a href="https://www.rozeegpt.ai/" target="_blank" rel="noopener noreferrer" class="text-link">
+              <i class="bx bx-link-external" aria-hidden="true"></i> Visit site
+            </a>
+          </div>
+        </article>
+
+        <article class="work-box">
+          <a class="work-media" href="https://github.com/zaheeransari453/KnowledgeHub-RAG" target="_blank"
+            rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="images/knowledgehub.webp" width="800" height="429" loading="lazy"
+              alt="KnowledgeHub home screen: 'Chat with your knowledge base', with a new-chat action, document manager and recent chat history" />
+          </a>
+          <div class="work-head">
+            <h3>KnowledgeHub — RAG Assistant</h3>
+            <p class="work-meta">Personal project · In development</p>
+          </div>
+          <p>
+            A full-stack RAG platform that ingests PDFs and web pages, generates
+            embeddings and runs vector-based semantic search, so every chat
+            queries the whole document set at once and answers with cited,
+            streaming responses — plus real-time voice interaction on top.
+          </p>
+          <ul class="chips chips-sm">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Vercel AI SDK</li>
+            <li>Gemini</li>
+            <li>Groq</li>
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
+            <li>LiveKit</li>
+          </ul>
+          <div class="work-links">
+            <a href="https://github.com/zaheeransari453/KnowledgeHub-RAG" target="_blank" rel="noopener noreferrer"
+              class="text-link">
+              <i class="bx bxl-github" aria-hidden="true"></i> Source
+            </a>
+          </div>
+        </article>
+
+        <article class="work-box">
+          <a class="work-media" href="https://postify-app-mxn3.vercel.app" target="_blank" rel="noopener noreferrer"
+            tabindex="-1" aria-hidden="true">
+            <img src="images/postify.webp" width="800" height="431" loading="lazy"
+              alt="Postify Media welcome screen: 'Your Story, Your Stage' with Start and Login actions" />
+          </a>
+          <div class="work-head">
+            <h3>Postify — Social Media App</h3>
+            <p class="work-meta">Internship project, Rozee.pk · Feb 2025 · Live</p>
+          </div>
+          <p>
+            A Twitter-style social platform built entirely from scratch to
+            sharpen my React and state-management fundamentals — sign-in flow,
+            feeds, posting and client-side persistence, all wired through Redux
+            and React Router.
+          </p>
+          <ul class="chips chips-sm">
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>React Router</li>
+            <li>Bootstrap 5</li>
+            <li>localStorage</li>
+          </ul>
+          <div class="work-links">
+            <a href="https://postify-app-mxn3.vercel.app" target="_blank" rel="noopener noreferrer" class="text-link">
+              <i class="bx bx-play-circle" aria-hidden="true"></i> Live demo
+            </a>
+            <a href="https://github.com/zaheeransari453/postify_app" target="_blank" rel="noopener noreferrer"
+              class="text-link">
+              <i class="bx bxl-github" aria-hidden="true"></i> Source
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subheading">Practice <span>Projects</span></h3>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/analog-clock.webp" width="800" height="355" loading="lazy"
+            alt="Screenshot of the Analog Clock project" />
+          <div class="portfolio-layer">
+            <h4>Analog Clock</h4>
+            <p>A working analog clock built with HTML, CSS and JavaScript.</p>
+            <div class="demo">
+              <a href="https://github.com/zaheeransari453/analogClock" target="_blank" rel="noopener noreferrer"
+                aria-label="Analog Clock source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+              <a href="https://zaheeransari453.github.io/analogClock/" target="_blank" rel="noopener noreferrer"
+                aria-label="Analog Clock live demo"><i class="bx bx-play-circle" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/calculator.webp" width="800" height="354" loading="lazy"
+            alt="Screenshot of the Calculator project" />
+          <div class="portfolio-layer">
+            <h4>Calculator</h4>
+            <p>A digital calculator handling chained arithmetic in vanilla JavaScript.</p>
+            <div class="demo">
+              <a href="https://github.com/zaheeransari453/Calculator" target="_blank" rel="noopener noreferrer"
+                aria-label="Calculator source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+              <a href="https://zaheeransari453.github.io/Calculator/" target="_blank" rel="noopener noreferrer"
+                aria-label="Calculator live demo"><i class="bx bx-play-circle" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/digital-watch.webp" width="800" height="356" loading="lazy"
+            alt="Screenshot of the Digital Watch project" />
+          <div class="portfolio-layer">
+            <h4>Digital Watch</h4>
+            <p>A live digital clock driven by JavaScript date and time APIs.</p>
+            <div class="demo">
+              <a href="https://github.com/zaheeransari453/digitalWatch" target="_blank" rel="noopener noreferrer"
+                aria-label="Digital Watch source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+              <a href="https://zaheeransari453.github.io/digitalWatch/" target="_blank" rel="noopener noreferrer"
+                aria-label="Digital Watch live demo"><i class="bx bx-play-circle" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/study-sync.webp" width="800" height="357" loading="lazy"
+            alt="Screenshot of the StudySync landing page project" />
+          <div class="portfolio-layer">
+            <h4>StudySync</h4>
+            <p>A responsive multi-section layout built to practise CSS Flexbox and Grid.</p>
+            <div class="demo">
+              <a href="https://github.com/zaheeransari453/StudySync" target="_blank" rel="noopener noreferrer"
+                aria-label="StudySync source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+              <a href="https://zaheeransari453.github.io/StudySync/" target="_blank" rel="noopener noreferrer"
+                aria-label="StudySync live demo"><i class="bx bx-play-circle" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ..............CONTACT SECTION...............-->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form id="contact-form" novalidate>
+        <div class="input-box">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email_id">Email address</label>
+            <input type="email" id="email_id" name="email_id" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="field">
+            <label for="mobile_no">Mobile number <span class="optional">(optional)</span></label>
+            <input type="tel" id="mobile_no" name="mobile_no" autocomplete="tel" inputmode="tel" />
+          </div>
+          <div class="field">
+            <label for="email_sub">Subject</label>
+            <input type="text" id="email_sub" name="email_sub" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="body">Your message</label>
+          <textarea id="body" name="message" rows="8" required></textarea>
+        </div>
+
+        <!-- spam honeypot: hidden from people, filled in by bots -->
+        <div class="honeypot" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn">Send message</button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="contact-fallback">
+        Prefer email? Reach me at
+        <a href="mailto:zaheerulhassan453@gmail.com" class="text-link">zaheerulhassan453@gmail.com</a>
       </p>
+    </section>
+  </main>
 
-      <div class="social-media">
-        <a href="https://www.facebook.com/zaheeer.ansari?mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
-        <a href="https://x.com/zaheeer_ansari?t=-Sj_Om7SuktM1AfW3ocqDA&s=09"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.instagram.com/zaheeer.ansari?igsh=dzIwdml2cW1yZXZh"><i
-            class="bx bxl-instagram-alt"></i></a>
-        <a href="https://www.linkedin.com/in/zaheeransari453"><i class="bx bxl-linkedin-square"></i></a>
-      </div>
-
-      <a href="https://drive.google.com/file/d/11C4x5_xe8hK1iTW8_aqicrvZbcRW47EE/view?usp=drive_link"
-        class="btn">Download CV</a>
-    </div>
-    <div class="home-img">
-      <img src="images/home_profile .png" alt="" />
-    </div>
-  </section>
-
-  <!-- ................ABOUT SECTION.............. -->
-
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="images/about_Profile.png" alt="" />
-    </div>
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend Developer!</h3>
-      <p>
-        Hi, I'm Zaheer, a dedicated web and front-end developer with a passion
-        for bringing ideas to life through code. My journey in web development
-        started with background in Software Engineering, and since then, I've
-        honed my skills in HTML5, CSS3, MUI, Bootstrap5, JavaScript, and various
-        front-end frameworks like React.
-      </p>
-      <a href="public/aboutme.html" class="btn">Read More</a>
-    </div>
-  </section>
-
-  <!-- ................EDUCATION SECTION..........-->
-
-  <section id="education" class="education">
-    <h2 class="heading"><span>my</span> Journey</h2>
-    <div class="education-row">
-      <div class="education-column">
-        <h2 class="title">Education</h2>
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2019 - 2023
-              </div>
-              <h3>
-                Graduation Degree - University of Management and Technology
-                Lahore
-              </h3>
-              <p>
-                Graduated with a BS in Software Engineering, achieving a CGPA
-                of 3.38.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2017 - 2019
-              </div>
-              <h3>
-                Intermediate Degree - Stars Group of Colleges, Shadarah Town
-                Lahore
-              </h3>
-              <p>
-                Completed Intermediate in Computer Science (ICS), achieving
-                80% marks.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2014 - 2016
-              </div>
-              <h3>
-                Matriculation Degree - The Learners Grammer School, Shadarah
-                Town Lahore
-              </h3>
-              <p>
-                Completed Matriculation with science subjects, achieving 77%
-                marks.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="education-column">
-        <h2 class="title">Experience</h2>
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> Jan 2026 - Present
-              </div>
-              <h3>MERN Stack Intern / Associate Software Developer - StrategistHub</h3>
-              <p>
-                Developing Aurie AI, a meditation and wellness app, across desktop
-                (Electron macOS app) and web (Next.js + Tailwind). Focused on
-                feature development, UI/UX implementation from Figma, bug fixing,
-                and performance optimization. Integrating REST APIs and ensuring
-                smooth frontend-backend communication while collaborating with
-                cross-functional teams and contributing to testing/debugging.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> Nov 2024 - Jun 2025
-              </div>
-              <h3>Frontend Developer (Junior/Associate) - Rozee.pk</h3>
-              <p>
-                Contributed to RozeeGPT, an AI-powered career assistant.
-                Built reusable, responsive UI components using React.js and
-                Material UI, and improved performance, UX consistency, and
-                mobile responsiveness. Worked closely with designers and
-                backend teams using Git/GitLab to ensure cross-browser
-                compatibility and reliable feature delivery.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2022 - 2023
-              </div>
-              <h3>
-                Teacher Assistent - University of Management and Technology
-              </h3>
-              <p>
-                From November-2022 to July-2023, I served as a Teaching
-                Assistant in Software Engineering Subjects at UMT.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2022-2022
-              </div>
-              <h3>
-                Data Entry Operator - Outfitters Clothing Company Lahore
-              </h3>
-              <p>
-                From August-2022 to October-2022, I worked as a Data Entry
-                Operator at Outfitters clothing company in Lahore.
-              </p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2018 - 2019
-              </div>
-              <h3>Data Entry Operator - Deluxe Footwear pvt Ltd.</h3>
-              <p>
-                I worked as a Data Entry Operator for 3 months at Deluxe
-                Footwear in Sheikhupura, where I managed and updated inventory
-                databases.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ................SKILLS SECTION..............-->
-
-  <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-
-    <div class="skills-row">
-      <div class="skills-column">
-        <h3 class="title">Coding Skills</h3>
-
-        <div class="skills-box">
-          <div class="skills-content">
-            <div class="progress">
-              <h3>HTML5 & CSS3<span>90%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Material UI<span>65%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Tailwind CSS<span>60%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Bootstrap5<span>75%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>JavaScript<span>65%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-              <h3>TypeScript<span>50%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>React.js<span>75%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Git & GitHub & GitLab<span>70%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Next.js<span>65%</span></h3>
-              <div class="bar"><span style="width: 65%"></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Node.js<span>45%</span></h3>
-              <div class="bar"><span style="width: 45%"></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>MongoDB<span>45%</span></h3>
-              <div class="bar"><span style="width: 45%"></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>MySQL<span>35%</span></h3>
-              <div class="bar"><span style="width: 35%"></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Electron<span>40%</span></h3>
-              <div class="bar"><span style="width: 40%"></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skills-column">
-        <h3 class="title">Professional Skills</h3>
-
-        <div class="skills-box">
-          <div class="skills-content">
-            <div class="progress">
-              <h3>Frontend Development<span>90%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Web Development<span>60%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Responsive Designs<span>90%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Apis Integration<span>80%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Backend Development<span>40%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>MERN Development<span>55%</span></h3>
-              <div class="bar"><span style="width: 55%"></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ................SERVICES SECTION............ -->
-
-  <section class="services" id="services">
-    <h2 class="heading">my <span>Services</span></h2>
-
-    <div class="services-container">
-      <div class="service-box">
-        <i class="bx bx-code-alt"></i>
-        <h3>Frontend Development</h3>
-        <p>
-          Creating visually appealing and responsive interfaces using HTML,
-          CSS, and JavaScript. Ensuring a seamless user experience across
-          various devices and browsers.
-        </p>
-        <!-- <a href="" class="btn">Read More</a> -->
-      </div>
-
-      <div class="service-box">
-        <i class="bx bx-code-alt"></i>
-        <h3>Web Development</h3>
-        <p>
-          Building and maintaining websites by integrating frontend and
-          backend technologies. Ensuring functionality, performance, and
-          security of web applications.
-        </p>
-        <!-- <a href="" class="btn">Read More</a> -->
-      </div>
-
-      <div class="service-box">
-        <i class="bx bx-code-alt"></i>
-        <h3>Responsive Design</h3>
-        <p>
-          Creating responsive websites that provide an optimal viewing experience across a wide range of devices, which
-          is from mobile phones to desktop computers.
-        </p>
-        <!-- <a href="" class="btn">Read More</a> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ...............PORTFOLIO SECTION............. -->
-
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Porject</span></h2>
-
-    <div class="portfolio-container">
-
-      <div class="portfolio-box">
-        <img src="images/analog_clock.PNG" alt="" />
-        _
-        <div class="portfolio-layer">
-          <h4>Analog Clock</h4>
-          <p>
-            Developed Analog Clock using HTML, CSS and JavaScript.
-          </p>
-
-          <div class="demo">
-            <a href="https://github.com/zaheeransari453/analogClock.git"><i class="bx bx-link-external"></i></a>
-            <a href="https://zaheeransari453.github.io/analogClock/"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images/digital_calculator.PNG" alt="" />
-
-        <div class="portfolio-layer">
-          <h4>Calculator</h4>
-          <p>
-            Developed digital Calculator with JavaScript's built-in function.
-          </p>
-          <div class="demo">
-            <a href="https://github.com/zaheeransari453/Calculator.git"><i class="bx bx-link-external"></i></a>
-            <a href="https://zaheeransari453.github.io/Calculator/"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images/digital_watch.PNG" alt="" />
-
-        <div class="portfolio-layer">
-          <h4>Digital Watch</h4>
-          <p>
-            Develop Digital Watch using javascript.
-          </p>
-          <div class="demo">
-            <a href="https://github.com/zaheeransari453/digitalWatch.git"><i class="bx bx-link-external"></i></a>
-            <a href="https://zaheeransari453.github.io/digitalWatch/"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images/study_sync.PNG" alt="" />
-
-        <div class="portfolio-layer">
-          <h4>StudySync</h4>
-          <p>
-            Developed this project to enhance my skills in CSS3 specially with
-            flex and grid.
-          </p>
-          <div class="demo">
-            <a href="https://github.com/zaheeransari453/StudySync.git"><i class="bx bx-link-external"></i></a>
-            <a href="https://zaheeransari453.github.io/StudySync/"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images/currencyConverter.png" alt="" />
-
-        <div class="portfolio-layer">
-          <h4>Curr. Converter</h4>
-          <p>
-            Upcommng Soon
-          </p>
-          <div class="demo">
-            <a href="#"><i class="bx bx-link-external"></i></a>
-            <a href="#"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images/bootstrapProject.png" alt="" />
-
-        <div class="portfolio-layer">
-          <h4>Bootstrap Porject</h4>
-          <p>
-            Upcomming Soon
-          </p>
-
-          <div class="demo">
-            <a href="#"><i class="bx bx-link-external"></i></a>
-            <a href="#"><i class="bx bx-play-circle"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ..............CONTACT SECTION...............-->
-
-  <section class="contact" id="contact">
-    <h3 class="heading">Contact <span>Me!</span></h3>
-
-    <form onsubmit="sendEmail(); reset(); return false;">
-      <div class="input-box">
-        <input type="text" id="fullName" placeholder="Full Name" />
-        <input type="email" id="email_id" placeholder="Email Address" />
-      </div>
-
-      <div class="input-box">
-        <input type="number" id="mobile_no" placeholder="Mobile Number" />
-        <input type="text" id="email_sub" placeholder="Email Subject" />
-      </div>
-
-      <textarea name="textarea" id="body" cols="30" rows="10" placeholder="Your Message"></textarea>
-
-      <input type="submit" class="btn" value="Send Message" />
-    </form>
-  </section>
-
-  <!-- ..............OOTER SECTION................. -->
+  <!-- ..............FOOTER SECTION................. -->
 
   <footer class="footer">
-    <div class="footer-text">
-      <p>copyright &copy; 2023 by Zaheer | All Rights are Reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">Zaheer Ansari<span class="logo-code" aria-hidden="true">&lt;/&gt;</span></a>
+        <p>
+          AI-Native Full-Stack Developer building modern web applications,
+          AI-powered products and intelligent digital experiences.
+        </p>
+        <p class="footer-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Open to new opportunities
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="public/aboutme.html">Full profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Get in touch</h2>
+        <ul class="footer-links">
+          <li><a href="mailto:zaheerulhassan453@gmail.com">zaheerulhassan453@gmail.com</a></li>
+          <li><a href="#contact">Send a message</a></li>
+          <li><a href="assets/Zaheer_AI_Native_Resume.pdf" download>Download CV</a></li>
+          <li class="footer-location">
+            <i class="bx bx-map" aria-hidden="true"></i> Lahore, Pakistan
+          </li>
+        </ul>
+
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/zaheeransari453" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/zaheeransari453" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on LinkedIn"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/zaheeer_ansari" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on X"><i class="bx bxl-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/just.x.zaheer" target="_blank" rel="noopener noreferrer"
+              aria-label="Zaheer Ansari on Instagram"><i class="bx bxl-instagram-alt" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-icon">
-      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Zaheer Ansari</p>
+      <p class="footer-built">Designed &amp; built with HTML, CSS and JavaScript</p>
+      <a href="#home" class="back-to-top">
+        Back to top <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+      </a>
     </div>
   </footer>
 
-  <!-- ..............scroll reveal................ -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- ..............Typed Js...................... -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- ..............Send an Email................ -->
-
-
-
-
-  <!-- ..............custom js..................... -->
-  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
